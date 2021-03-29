@@ -1,0 +1,29 @@
+.furfose {
+    padding: 100px 0;
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &-item {
+            &-title {
+                &::after {
+                    content: '02';
+                }
+            }
+
+            &-description {
+                font-size: 16px;
+                font-family: $mainFont;
+                color: $mainColor;
+                font-weight: 400;
+            }
+
+            &-img {
+                padding-right: 70px;
+                
+            }
+        }
+    }
+}

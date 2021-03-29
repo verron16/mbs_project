@@ -1,0 +1,112 @@
+footer {
+    position: relative;
+    background-color: #181818;
+}
+.result {
+    padding: 100px 0;
+    &-btn {
+        text-align: center;
+        padding-top: 70px;
+        &-back {
+            background: transparent;
+            width: 210px;
+            height: 57px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 100%;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            outline: none;
+            transition: .4s linear all;
+            &:hover {
+                background: white;
+                border: none;
+                color: #181818;
+            }
+        }
+    }
+    &-title {
+        font-size: 48px;
+        color: white;
+        font-family: $secondFont;
+        padding-left: 13px;
+        padding-bottom: 30px;
+    }
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        &-item {
+            color: white;
+            position: relative;
+            margin: 30px 20px;
+            max-width: 410px;
+            &-description {
+                color: white;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 26px;
+                line-height: 150%;
+                padding-left: 30px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    background-color: #F91616;
+                    width: 8px;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    left: 0;
+             }
+         }
+        }
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 15px 15px;
+            grid-template-areas:
+                ". . grid-item-three . ."
+                ". . grid-item-four grid-item-seven grid-item-nine"
+                "grid-item-one . grid-item-five grid-item-eight grid-item-ten"
+                "grid-item-two . grid-item-six . .";
+                justify-items: center;
+            &-item {
+                background: white;
+                width: 50px;
+                height: 50px;
+                border: 1px solid white;
+            }
+            &-description {
+                color: white;
+                text-align: center;
+                font-size: 13px;
+                font-family: $mainFont;
+            }
+        }
+    }
+}
+
+.grid-item-one { grid-area: grid-item-one; }
+.grid-item-two { grid-area: grid-item-two; }
+.grid-item-three { grid-area: grid-item-three; }
+.grid-item-four { grid-area: grid-item-four; }
+.grid-item-five { grid-area: grid-item-five; }
+.grid-item-six { grid-area: grid-item-six; }
+.grid-item-seven { grid-area: grid-item-seven; }
+.grid-item-eight { grid-area: grid-item-eight; }
+.grid-item-nine { grid-area: grid-item-nine; }
+.grid-item-ten { grid-area: grid-item-ten; }
+
+.subgrid-item {
+    background-color: #181818;
+    width: 49px;
+    height: 35px;
+}

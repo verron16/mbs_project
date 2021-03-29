@@ -1,0 +1,14 @@
+@mixin links {
+    color: white;
+    font-size: 16px;
+    font-family: $mainFont;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .4s linear all;
+}
+
+@mixin blocks {
+    font-size: 90px;
+    color: red;
+    opacity: 0.5;
+}

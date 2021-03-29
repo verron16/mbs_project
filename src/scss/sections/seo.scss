@@ -1,0 +1,23 @@
+.seo {
+    background-color: #F3F3F3;
+    padding: 140px 0;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        &-item {
+            
+            &-title {
+                &::after {
+                    content: '03';
+                }
+            }
+            &-img {
+                padding-right: 50px;
+                max-width: 80%;
+               
+            }
+        }
+    }
+}
